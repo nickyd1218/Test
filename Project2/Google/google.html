@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Slick Nick and K_Bizzle</title>
+  <body>
+		<div class="container">
+			<nav class="navbar">
+				<ul>
+					<li>
+						<a href="../Project2.html">Home</a>
+					</li>
+					<li>
+            <a href="../Yelp/yelp.html">Yelp</a>
+					</li>
+					<li>
+						<a href="../Twitter/twitter.html">Twitter</a>
+					</li>
+					<li>
+						<a href="../Nyse/NYSE.html">NYSE</a>
+          </li>	
+          <li>
+						<a href="../Google/google.html">Google</a>
+          </li>	
+          <li>
+						<a href="../Zagat/Zagat.html">Zagat</a>
+          </li>	
+          <li>
+						<a href="../Results/results.html">Results</a>
+          </li>	
+				</ul>
+			</nav>
+		</div>
+  </body>
+  
+  <nav>
+    <h1><strong>Google</strong></h1>
+      <p class="sansserif">
+        Welcome to our #Google Restaurant Score page!
+        <br>
+        <br>
+        In this section we took into accout the food review score from global superpower and every
+        inquiring mind's best friend, Google,to help us with our restaurant scoring system.
+        <br>
+        The graphic below shows the Google review score for our top 10 eats restaurants.
+        If the individual restaurant score was higher than the average of all 10 restaurants, 
+        it received a point on the NicKris food scale.
+        <br>
+        <br>
+      </p>
+    </nav>
+    
+    <img src = "graph.png" alt = "Google Restaurant Score">
+
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+  integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+  crossorigin=""></script>
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!-- The div that holds our map -->
+  <!-- <div id="map"></div> -->
+
+  <nav>
+    <h3><strong>Results</strong></h3>
+      <p class="sansserif">
+        We determined that all restaurants with at least a 3 rating would receive a half point and all restaurants above a 4 would receive a full point
+        <br>
+        <br>
+        Every restaurant reviewed on Google received a full point.
+        <br>
+
+      </p>
+    </nav>
+
+
+    <nav>
+      <h3><strong>Links</strong></h3>
+        <p class="sansserif">
+           <ul>
+						<a href="https://hoteldel.com/restaurant-coronado/1500-ocean/" target="_blank">1500 Ocean</a>
+          </ul>	
+          <ul>
+						<a href="" target="_blank">608 Oceanside</a>
+          </ul>	
+          <ul>
+						<a href="http://www.pokewan.com/" target="_blank">Pokewan</a>
+          </ul>	
+          <ul>
+						<a href="http://havana1920.com/" target="_blank">Havana 1920</a>
+          </ul>	
+          <ul>
+						<a href="https://lionfishsd.com/" target="_blank">Lionfish Modern Coastal Cuisine</a>
+          </ul>	
+          <ul>
+						<a href="http://bornandraisedsteak.com/" target="_blank">Born & Raised</a>
+          </ul>	
+          <ul>
+						<a href="https://www.hundredproofsd.com/" target="_blank">Hundred Proof</a>
+          </ul>	
+          <ul>
+						<a href="http://antiquerowcafe.menutoeat.com/" target="_blank">Antique Row Cafe</a>
+          </ul>	
+          <ul>
+						<a href="http://bobboi.com/" target="_blank">Bobboi Natural Gelato</a>
+          </ul>	
+          <ul>
+						<a href="http://www.juniperandivy.com/" target="_blank">Juniper & Ivy</a>
+          </ul>	
+        
+        
+        </p>
+      </nav>
+
+  <!-- D3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+
+  <!-- Leaflet JavaScript
+  <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script> -->
+
+  <script type="text/javascript" src="restaurantdata.js"></script>
+  <!-- API Key -->
+  <script type="text/javascript" src="config.js"></script>
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="logic.js"></script>
+</body>
+
+</html>
